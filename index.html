@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
     <title>T-Rex Dinosaur Game - Chrome Dino Run</title>
     <meta name="description"
-        content="T-Rex Dinosaur Game is a replica of Chrome's offline endless runner. Now you can play Dino Run online for free!">
+        content="T-Rex Dinosaur Game is a replica of Chrome's no internet dinosaur runner game. Now you can play as Steve in Google's dino game with muted option for free">
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" type="image/png" href="assets/trex-favicon.png" />
     <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
@@ -24,11 +24,17 @@
 
 <body id="t" class="offline">
     <h1 style="text-align: center;font-family: 'Space Mono', sans-serif;">Dino Runner</h1>
-    <div id="messageBox" class="sendmessage">
-        <p style="text-align: center;font-family: 'Space Mono', sans-serif;">Press Space to Start Game!</p>
-        <div class="niokbutton" onclick="okbuttonsend()"></div>
-    </div>
+    <p style="width: 600px; margin: 0 auto; text-align: center;font-family: 'Space Mono', sans-serif;">A replica of
+        Google dinosaur game
+        where you
+        play as Steve the dino running for their life. How long can you help
+        Steve survive avoiding cactuses and pterodactyl?</p>
     <div id="main-frame-error" class="interstitial-wrapper">
+        <div id="messageBox" class="sendmessage">
+            <p style="font-weight: bold; text-align: center; font-family: 'Space Mono', sans-serif;">press space to
+                start game</p>
+            <div class="niokbutton" onclick="okbuttonsend()"></div>
+        </div>
         <div id="main-content">
             <div class="icon icon-offline" alt=""></div>
         </div>
