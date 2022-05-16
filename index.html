@@ -58,13 +58,21 @@
 </body>
 
 <script defer>
+    function hideMessageBox() {
+        var box = document.getElementById("messageBox");
+        box.style.visibility = "hidden";
+    }
     document.onkeydown = function (evt) {
         evt = evt || window.event;
         if (evt.keyCode == 32) {
-            var box = document.getElementById("messageBox");
-            box.style.visibility = "hidden";
+            hideMessageBox()
         }
     };
+    document.addEventListener('touchstart', (evt) => {
+        if (evt.touches.length === 1) {
+            hideMessageBox()
+        }
+    })
 </script>
 
 </html>
